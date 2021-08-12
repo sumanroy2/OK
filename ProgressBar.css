@@ -1,0 +1,35 @@
+/*body{
+	background: linear-gradient(90deg,yellow,skyblue,red);
+	height: 100%;
+	width: 100%;
+	display: no-repeat;
+}*/
+.container{
+	height: 22px;
+	width: 100%;
+	background: #333;
+	position: relative;
+}
+.progress span{
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	font-family: sans-serif;
+	position: absolute;
+	left: 35%;
+	justify-content: center;
+	align-items: center;
+}
+.progress{
+	background: linear-gradient(90deg,yellow,red,skyblue);
+	height: 100%;
+	animation: animate 2s forwards;
+}
+@keyframes animate{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 70%;
+	}
+}
